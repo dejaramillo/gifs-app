@@ -1,19 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+
 import { GifsModule } from '../gifs/gifs.module';
+import { LazyImageComponent } from './components/lazy-image/lazy-image.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 
 
 @NgModule({
   declarations: [
+    LazyImageComponent,
     SidebarComponent,
   ],
   imports: [
     CommonModule,
-    GifsModule
   ],
   exports: [
+    LazyImageComponent,
     SidebarComponent
   ]
 })
