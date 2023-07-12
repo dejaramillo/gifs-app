@@ -1,0 +1,14 @@
+<div class="card md-2 text-center bg-dark">
+
+  <img
+  [src]="gif.images.downsized_medium.url"
+   [alt]="gif.title"
+   class="card-img-top">
+
+  <div class="card-body">
+
+    <p class="card-text text-white">
+      {{ gif.title ? gif.title : 'No title'}}
+    </p>
+
+  </div>
